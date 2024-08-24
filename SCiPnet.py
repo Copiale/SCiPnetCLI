@@ -11,7 +11,6 @@ soup = BeautifulSoup(r.content, 'html.parser')
 s = soup.find('div', id='page-content')
 lines = s.find_all('p')
 
-line = []
 w = textwrap.TextWrapper(width=150, break_on_hyphens=True, initial_indent='\n')
 
 for line in lines:
